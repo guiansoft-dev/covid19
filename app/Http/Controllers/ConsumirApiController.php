@@ -16,6 +16,7 @@ class ConsumirApiController extends Controller
         $dateStart = $request->get('dateStart');
         $dateEnd = $request->get('dateEnd');
 
+        // key fornecida pelo brasil.io
         $key = ('Token b63ac5281e200ab9ce01cbbd9b2b5b1713129560');
         $responseStart = ("https://api.brasil.io/v1/dataset/covid19/caso/data/?state={$state}&date={$dateStart}");
         $responseEnd = ("https://api.brasil.io/v1/dataset/covid19/caso/data/?state={$state}&date={$dateEnd}");
